@@ -1,0 +1,15 @@
+[Unit]
+Description=Jobs queue daemon
+After=network.target
+
+[Service]
+Type=simple
+User=dhcpd
+Group=dhcpd
+WorkingDirectory=/opt/jobs-queue
+RuntimeDirectory=jobs-queue
+ExecStart=/opt/jobs-queue/jobs-queue -config ./config.yaml
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

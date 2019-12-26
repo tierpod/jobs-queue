@@ -1,0 +1,5 @@
+*.swp
+*.retry
+/bin
+/tmp
+/dist

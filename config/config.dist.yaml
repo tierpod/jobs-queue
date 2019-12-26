@@ -1,0 +1,13 @@
+workers: 1
+socket: "/run/jobs-queue.socket"
+log_debug: yes
+log_datetime: yes
+queue_size: 1
+cache_delete_mode: expire  # expire, complete, expire_complete
+cache_expire: 5            # seconds
+cache_excludes:
+  - /bin/sleep 1\d+
+
+jobs:
+  - /bin/sleep
+  - /bin/echo
