@@ -1,4 +1,4 @@
-jobs-queue
+jobs-queue ![Build](https://github.com/tierpod/jobs-queue/workflows/Build/badge.svg)
 ==========
 
 Сервис для запуска фоновых задач. Позволяет регулировать количество одновременных воркеров
